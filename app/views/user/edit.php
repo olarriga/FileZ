@@ -3,7 +3,7 @@
   <form method="POST" enctype="multipart/form-data" action="<?php echo url_for ('/admin/users/'.$user->id.'/edit') ?>" id="update_user-form">
   <div id="username">
     <label for="input-username"><?php echo __('Username') ?> :</label>
-    <input type="text" id="input-username" name="username" value="<?php echo $user->username ?>" alt="<?php echo __('Username') ?>" maxlength="20" />
+    <input type="text" id="input-username" name="username" value="<?php echo $user->username ?>" alt="<?php echo __('Username') ?>" maxlength="40" />
     <!-- <label for="input-password"><?php echo __('Password') ?> :</label> -->
     <input type="password" id="input-password" name="password" class="password" autocomplete="off" size="5"/>
   </div>
